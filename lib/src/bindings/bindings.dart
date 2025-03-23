@@ -4,7 +4,7 @@ import 'package:onnxruntime/src/bindings/onnxruntime_bindings_generated.dart';
 
 final DynamicLibrary _dylib = () {
   if (Platform.isAndroid) {
-    return DynamicLibrary.open('libonnxruntime.so');
+    return DynamicLibrary.open('libonnxruntime.so'); 
   }
 
   if (Platform.isIOS) {
